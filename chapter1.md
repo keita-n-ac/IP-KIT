@@ -68,6 +68,11 @@ Mo Tu We Th Fr Sa Su
 #### matplotlibライブラリ
 - グラフ作成に特化した外部ライブラリ
   - 様々なグラフを出力することができるが，デフォルトの設定では，折れ線グラフとなる
+- **matplotlibをimportする場合，matplotlib.pyplotをpltとしてimportすることが多い**
+```python
+import matplotlib.pyplot as plt
+```
+
 - リスト構造に格納された値をグラフとして可視化する例
   - インデックスに対応した関係のグラフとなる
   - 例: ``x = [1, 2, 3, 4, 5]`` ``y = [1, 4, 9, 16, 25]`` ``plt.plot(x, y)``とした場合，
