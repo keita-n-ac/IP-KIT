@@ -98,6 +98,7 @@ plt.show()                      # 作成したグラフの表⽰
 ```python
 import numpy as np
 ```
+#### 黒画像の作成
 - ``np.zeros((高さ, 幅, 3), np.uint8)``とすることで，解像度 幅×高さ，RGB要素の値を0として初期化する
   - つまり，解像度 幅×高さの黒画像を作成するという意味になる
   - 最後の3はRとGとBの3種類から3と指定している
@@ -115,7 +116,9 @@ plt.show()
 ```
 <img src="./fig/black.png" width="50%">
 
-
+#### 白画像の作成
+- ``np.fill((高さ, 幅, 3), num, np.uint8)`` とすることで，解像度:幅×高さ，RGB要素の値をnumとして初期化する
+  - つまり，``np.fill((高さ, 幅, 3), 255, np.uint8)``は，numが255なので，解像度:幅×高さの白画像を作成するという意味になる
 ```python
 import numpy as np
 import matplotlib.pyplot as plt # ライブラリの導⼊
@@ -126,6 +129,9 @@ plt.show()
 ```
 <img src="./fig/white.png" width="50%">
 
+#### グレー画像の作成
+- RGBの各要素が128の場合，灰色画像になる
+  - つまり，``np.fill((400, 600, 3), 128, np.uint8)``は，numが128なので，解像度 600×400の灰色画像を作成するという意味になる
 ```python
 import numpy as np
 import matplotlib.pyplot as plt # ライブラリの導⼊
