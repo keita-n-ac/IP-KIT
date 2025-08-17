@@ -142,3 +142,125 @@ plt.show()
 ```
 <img src="./fig/gray.png" width="50%">
 
+#### 画素値操作
+- ``np.zero``や``np.full``で代入した変数に対して，``変数[高さ番号][幅番号][色要素番号]``を指定することで，色を変更することができる
+- 色要素番号は以下の通り（**0から始まるため，3を指定するとエラーになることに注意**）
+  - 0: 赤要素
+  - 1: 緑要素
+  - 2: 青要素
+- グラフの目盛は自動的に付けられるので，現段階では無視して良い
+```python
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.zeros((2, 3, 3), np.uint8) # 黒画像を作成
+image[0][0][0] = 255 # 高さ0, 幅0の画素の赤要素を255にする
+image[0][1][1] = 255 # 高さ0, 幅1の画素の緑要素を255にする
+image[1][2][2] = 255 # 高さ1, 幅2の画素の青要素を255にする
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/value.png" width="50%">
+
+#### OpenCVライブラリ
+
+- 画像処理，コンピュータビジョンを行う外部ライブラリ
+- ``cv2``をimportすることで使用できる
+
+```python
+import cv2
+```
+#### 線分描画
+- ``cv2.line(変数名, (x0座標，y0座標), (x1座標，y1座標), (赤要素, 緑要素, 青要素), 太さ)``で, 指定した太さ，色で(x0, y0)から(x1, y1)に線分を描くことができる
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+
+# 緑色, 太さ5で座標(0, 0)から座標(600, 400)に直線を引く
+cv2.line(image, (0, 0), (600, 400), (0, 255, 0), 5)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/line.png" width="50%">
+
+
+#### 長方形描画
+- ``cv2.rectangle(変数名, (左上のx座標，左上のy座標, 長方形の幅，長方形の高さ), (赤要素, 緑要素, 青要素), -1)``で, 指定した色で，指定した左上頂点(x, y)とし，指定した幅，高さの長方形を描くことができる（-1を整数値にすると枠だけを描く，3にすると枠線の太さ3となる）
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+
+# 青色, 座標(0, 0)を長方形の左上の座標とした，幅300, 高さ400の長方形を描く
+cv2.rectangle(image, (0, 0, 300, 400), (0, 0, 255), -1)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/rect.png" width="50%">
+
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+# 赤枠（太さ10）, 座標(300, 0)を長方形の左上の座標とした，幅300, 高さ400の長方形を描く
+cv2.rectangle(image, (300, 0, 300, 400), (255, 0, 0), 10)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/rect2.png" width="50%">
+
+#### 円描画
+- ``cv2.circle(変数名, (中心のx座標，中心のy座標), 半径, (赤要素, 緑要素, 青要素), -1)``で, 指定した色で，指定した中心座標(x, y)とし，指定した半径の円を描くことができる（-1を整数値にすると枠だけを描く，3にすると枠線の太さ3となる）
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+# 緑色, 中心座標(200, 200)で半径50の円を描く
+cv2.circle(image, (200, 200), 50, (0, 255, 0), -1)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/circle.png" width="50%">
+
+
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+# 青枠, 太さ20, 中心座標(400, 200)で半径60の円を描く
+cv2.circle(image, (400, 200), 60, (0, 0, 255), 20)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/circle2.png" width="50%">
+
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+cv2.circle(image, (250, 200), 60, (255, 255, 0), 20)
+cv2.circle(image, (300, 200), 60, (0, 0, 255), 20)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/circle3.png" width="50%">
+
+- プログラムは上から下に順番に実行されるため，**最初に描いた図形が最背面，最後に描いた図形が最前面となる**
+
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+image = np.full((400, 600, 3), 255, np.uint8) # 白画像を作成
+cv2.circle(image, (300, 200), 60, (0, 0, 255), 20)
+cv2.circle(image, (250, 200), 60, (255, 255, 0), 20)
+plt.imshow(image)
+plt.show()
+```
+<img src="./fig/circle4.png" width="50%">
