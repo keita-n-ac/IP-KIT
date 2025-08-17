@@ -52,4 +52,4 @@
 
 ## 演習5
 - 以下の画像を参考にして，``ex3.jpeg``に対してマスク処理を行ってください．
-<img src="./ex-fig/ex5.png" width="50%">
+<img src="./ex-fig/ex5.png" width="100%">
