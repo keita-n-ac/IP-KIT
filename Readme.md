@@ -14,8 +14,7 @@
 | 物体検知 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter9.md |
 
 ## 演習課題ページ
-
-
+ https://github.com/keita-n-ac/IP-KIT/blob/main/ex.md
 
 - プログラムに関して
 - 使用画像ファイルなど: file.zipにあります．
