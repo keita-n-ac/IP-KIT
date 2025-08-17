@@ -9,7 +9,7 @@
 | トーンカーブ | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter4.md |
 | 二値化，マスク合成 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter5.md |
 | 色空間 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter6.md |
-| モルフォロジー演算 |  |
+| モルフォロジー演算 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter7.md |
 | フィルタリング・エッジ検出 |  |
 | 物体検知 |  |
 
