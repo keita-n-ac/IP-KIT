@@ -113,4 +113,26 @@ black_image = np.zeros((400, 600, 3), np.uint8)
 plt.imshow(black_image)
 plt.show()
 ```
+<img src="./fig/black.png" width="50%">
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+
+white_image = np.full((400, 600, 3), 255, np.uint8)
+plt.imshow(white_image)
+plt.show()
+```
+<img src="./fig/white.png" width="50%">
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt # ライブラリの導⼊
+
+gray_image = np.full((400, 600, 3), 128, np.uint8)
+plt.imshow(gray_image)
+plt.show()
+```
+<img src="./fig/gray.png" width="50%">
 
