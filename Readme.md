@@ -8,7 +8,7 @@
 | 画素値ヒストグラム | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter3.md |
 | トーンカーブ | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter4.md |
 | 二値化，マスク合成 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter5.md |
-| 色空間 |  |
+| 色空間 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter6.md |
 | モルフォロジー演算 |  |
 | フィルタリング・エッジ検出 |  |
 | 物体検知 |  |
