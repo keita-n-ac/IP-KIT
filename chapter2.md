@@ -19,7 +19,7 @@ plt.show()
 ```
 
 - 入力画像を``soya.jpeg``とする
-<img src="./soya.jpeg" width="50%">
+<img src="./fig/soya.jpeg" width="50%">
 
 - サンプルプログラム（ただし失敗する）
 ```python
@@ -31,7 +31,7 @@ plt.imshow(image)
 plt.show()
 ```
 
-<img src="./soya-bgr.png" width="50%">
+<img src="./fig/soya-bgr.png" width="50%">
 
 ### OpenCVで画像を読み込む際の注意
 
@@ -50,7 +50,7 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 plt.imshow(image)
 plt.show()
 ```
-<img src="./soya-rgb.png" width="50%">
+<img src="./fig/soya-rgb.png" width="50%">
 
 ### グレー画像の変換
 - カラー画像からグレースケール画像に変更する際も，``cv2.cvtColor``を使用する
@@ -67,7 +67,7 @@ plt.imshow(image)
 plt.gray()
 plt.show()
 ```
-<img src="./soya-gray.png" width="50%">
+<img src="./fig/soya-gray.png" width="50%">
 
 - サンプルプログラム（BGR → RGB → GRAYでグレー変換）
 ```python
@@ -80,7 +80,7 @@ plt.imshow(image)
 plt.gray()
 plt.show()
 ```
-<img src="./soya-gray.png" width="50%">
+<img src="./fig/soya-gray.png" width="50%">
 
 ### opencvの画像の出力（保存）
 - 変数に保存されている画素値の画像をファイル出力する
@@ -99,7 +99,7 @@ plt.gray()
 plt.show()
 ```
 - 以下の``soya-result.jpeg``が出力される
-<img src="./soya-result.jpeg" width="50%">
+<img src="./fig/soya-result.jpeg" width="50%">
 
 - 有名な画像フォーマット形式を扱えることができる
   - BMP形式（拡張子: ``bmp``）
@@ -111,7 +111,7 @@ plt.show()
 
 ### PGM形式ファイルの読み込み
 - 画像ファイル``test.pgm``（拡大図）
-<img src="./pgm1.png" width="25%">
+<img src="./fig/pgm1.png" width="25%">
 
 - ``test.pgm``の中身
   
@@ -139,12 +139,12 @@ plt.show()
 ```
 
 - 出力結果
-<img src="./output-pgm.png" width="50%">
+<img src="./fig/output-pgm.png" width="50%">
 
 
 ### PPM形式ファイルの読み込み
 - 画像ファイル``test.ppm``（拡大図）
-<img src="./ppm1.png" width="25%">
+<img src="./fig/ppm1.png" width="25%">
 
 - ``test.ppm``の中身
 
@@ -168,5 +168,5 @@ plt.show()
 ```
 
 - 出力結果
-<img src="./output-ppm.png" width="50%">
+<img src="./fig/output-ppm.png" width="50%">
 
