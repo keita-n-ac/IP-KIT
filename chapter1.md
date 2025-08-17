@@ -239,6 +239,8 @@ plt.show()
 ```
 <img src="./fig/circle2.png" width="50%">
 
+- プログラムは上から下に順番に実行されるため，**最初に描いた図形が最背面，最後に描いた図形が最前面となる**
+
 ```python
 import cv2
 import numpy as np
@@ -250,8 +252,6 @@ plt.imshow(image)
 plt.show()
 ```
 <img src="./fig/circle3.png" width="50%">
-
-- プログラムは上から下に順番に実行されるため，**最初に描いた図形が最背面，最後に描いた図形が最前面となる**
 
 ```python
 import cv2
