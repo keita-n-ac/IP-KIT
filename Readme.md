@@ -1,4 +1,4 @@
-##### 画像処理プログラム演習用ページ
+# 画像処理プログラム演習用ページ
 
 ## 資料ページ
 | 内容 | 資料ページ | 
@@ -12,6 +12,10 @@
 | モルフォロジー演算 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter7.md |
 | フィルタリング・エッジ検出 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter8.md |
 | 物体検知 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter9.md |
+
+## 演習課題ページ
+
+
 
 - プログラムに関して
 - 使用画像ファイルなど: file.zipにあります．
