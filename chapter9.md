@@ -219,7 +219,7 @@ plt.imshow(image)
 plt.show()
 ```
 - 出力結果
-<img src="./detect-people.png" width="65%">
+<img src="./fig/detect-people.png" width="65%">
 
 
 - 猫の検知を同様に行う
