@@ -4,7 +4,7 @@
 | 内容 | 資料ページ | 
 | ------ | --- |
 | イントロダクション | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter1.md |
-| OpenCV，pgm形式, ppm形式 |  |
+| OpenCV，pgm形式, ppm形式 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter2.md |
 | 画素値ヒストグラム |  |
 | トーンカーブ |  |
 | 二値化，マスク合成 |  |
