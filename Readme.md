@@ -10,7 +10,7 @@
 | 二値化，マスク合成 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter5.md |
 | 色空間 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter6.md |
 | モルフォロジー演算 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter7.md |
-| フィルタリング・エッジ検出 |  |
+| フィルタリング・エッジ検出 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter8.md |
 | 物体検知 |  |
 
 - プログラムに関して
