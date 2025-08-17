@@ -28,7 +28,7 @@ plt.imshow(image)
 plt.show()
 ```
 - 出力結果
-<img src="./nikka-hsv.png" width="60%">
+<img src="./fig/nikka-hsv.png" width="60%">
 
 
 ### RGB色空間
