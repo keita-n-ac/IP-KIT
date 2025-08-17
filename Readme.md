@@ -17,7 +17,8 @@
 - https://github.com/keita-n-ac/IP-KIT/blob/main/ex.md
 
 #### プログラムに関して
-- 使用画像ファイルなど: file.zipにあります．
+- プログラム使用画像ファイルなど: ``file.zip``にあります．
+  - 演習に使用する画像ファイル: ``ex-fig.zip``にあります．
 - Python 3.13.5で動作確認
 - 必要ライブラリ（pip3でインストールする）
   - opencv-python
