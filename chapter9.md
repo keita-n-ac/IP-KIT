@@ -313,7 +313,7 @@ plt.imshow(image)
 plt.show()
 ```
 - 出力結果
-<img src="./detect-cat.png" width="65%">
+<img src="./fig/detect-cat.png" width="65%">
 
 
 ### YuNetによる顔検出
