@@ -11,7 +11,7 @@
 | 色空間 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter6.md |
 | モルフォロジー演算 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter7.md |
 | フィルタリング・エッジ検出 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter8.md |
-| 物体検知 |  |
+| 物体検知 | https://github.com/keita-n-ac/IP-KIT/blob/main/chapter9.md |
 
 - プログラムに関して
 - 使用画像ファイルなど: file.zipにあります．
